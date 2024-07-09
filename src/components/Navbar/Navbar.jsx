@@ -217,7 +217,7 @@ const Navbar = () => {
                     {isAuthenticated && 
                     <div className="outer-box laptop-outer-box">
                         <a className="upload-cv " href="/dashboard">
-                            Upload your CV <i className='fa fa-upload'></i>
+                            Dashboard <i className='fa fa-upload'></i>
                         </a>
                         {/* <div onClick={()=>{localStorage.setItem('isAuthenticate',false);navigate('/job-seeker-login');}}>Logout</div> */}
                         <div className="btn-box">
