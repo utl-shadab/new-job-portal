@@ -1,0 +1,551 @@
+.profile-skills {
+    padding:12px 20px;
+    background: #fff;
+    border-radius: 5px;
+    height: auto; 
+    transition: height 0.3s ease; 
+    margin-bottom: 20px;
+  }
+  .profile-employment{
+    padding:12px 20px;
+    background: #fff;
+    border-radius: 5px;
+    height: auto; 
+    margin-bottom: 20px;
+    transition: height 0.3s ease; 
+  }
+  .profile-work-sample{
+    padding:12px 20px;
+    background: #fff;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    height: auto; 
+    transition: height 0.3s ease;
+  }
+  .profile-worksample{
+    padding:12px 20px;
+    background: #fff;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    height: auto; 
+    transition: height 0.3s ease;
+  }
+  .education-container{
+    padding:12px 20px;
+    background: #fff;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    height: auto; 
+    transition: height 0.3s ease;
+  }
+  .profile-skills.expanded {
+    height: auto; /* Expand height */
+  }
+.keyskills-container .skill-tag {
+    background-color: #E8F0FB80;
+    color: #545454;
+    font-size: 14px;
+    border-radius: 4px;
+    padding: 5px 10px;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .keyskills-container .skills-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .slide-in {
+    animation: slide-in 0.5s forwards;
+  }
+  
+  @keyframes slide-in {
+    from {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  button.btn-close {
+    font-size: 10px;
+    margin-left: 5px;
+}
+.skills-dropdown {
+  width: 100%;
+  height: 241px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  z-index: 1000;
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+.skills-dropdown.show {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .skills-dropdown .dropdown-item {
+    padding: 10px;
+    color: #000;
+    display: inline-grid;
+    cursor: pointer;
+    margin: 3px;
+    background: #E8F0FB80;
+    width: fit-content;
+}
+  .skills-dropdown .dropdown-item:hover {
+    background-color: #0B5ED7;
+    color: #fff;
+  }
+  .skills-dropdown::-webkit-scrollbar {
+    display: none; 
+  }
+  .skills-header {
+    background-color: #f8fbfe;
+    padding: 17px 13px;
+    border-radius: 4px;
+    color: #1967d2;
+    transition: background-color 0.3s ease, color 0.3s ease;
+
+}
+.employment-header,
+.work-sample-header,
+.education-header,
+.certification-header {
+  background-color: #f8fbfe;
+  padding: 17px 13px;
+  border-radius: 4px;
+  color: #1967d2;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.work-sample-header:hover,
+.employment-header:hover,
+.education-header:hover,
+.certification-header:hover,
+.skills-header:hover {
+  background-color: #0B5ED7;
+  color: #fff;
+}
+  .skills-header:hover .skills-save-btn {
+    background-color: #fff;
+    color: #0B5ED7;
+  }
+  .skills-save-btn {
+    background-color: #0B5ED7;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  .skills-save-btn:hover {
+    background-color: #fff;
+    color: #0B5ED7;
+  }
+  .skills-header h5,
+  .education-header h5,
+  .employment-header h5,
+  .work-sample-header h5,
+  .certification-header h5 {
+    font-size: 20px;
+    font-weight: 600;
+  }
+  
+  .fade-in-out {
+    animation: fadeInOut 5s forwards;
+  }
+  .add-button {
+    color: #0B5ED7;
+    font-size: 14px;
+    font-weight: 600;
+  }
+  .certification-header:hover .add-button {
+    color: #fff;
+  }
+  
+  @keyframes fadeInOut {
+    0% { opacity: 0; }
+    10% { opacity: 1; }
+    90% { opacity: 1; }
+    100% { opacity: 0; }
+  }
+  
+  .dont-show {
+    display: none;
+  }
+  .education-header .fa-pen {
+    cursor: pointer;
+  }
+  
+  .education-container label {
+    font-size: 14px !important;
+  }
+  .education-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .education-list li {
+    color: #007bff;
+    cursor: pointer;
+    margin-bottom: 10px;
+    font-weight: 600;
+  }
+  .education-list li:first-child {
+    margin-top: 10px;
+  }
+  .job-alerts h2 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+  .job-alerts h2 span {
+    font-size: 18px;
+    font-weight: 400;
+    color: #6c757d;
+  }
+  .job-item {
+    border-bottom: 1px solid #e8e8e8;
+    border-radius: 4px;
+    transition: all 0.3s ease-in-out;
+  }
+  .job-item:hover {
+    background-color: #fff;
+  }
+  .job-item:hover .ap-btn {
+    background-color: #007bff;
+    color: #fff;
+  }
+  .job-item img {
+    width: 50px;
+    height: 50px;
+    border-radius: 4px;
+  }
+  .job-item h5 {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 5px;
+  }
+  .job-item p {
+    font-size: 14px;
+    color: #6c757d;
+  }
+  .job-item .badge {
+    font-size: 12px;
+    padding: 5px 10px;
+    background-color: #e8f0fb;
+    color: #1967D2;
+    border-radius: 20px;
+  }
+  .job-item .btn-outline-primary {
+    border: 1px solid #007bff;
+    color: #007bff;
+  }
+  .pagination .page-link {
+    color: #007bff;
+  }
+  .pagination .page-item.active .page-link {
+    background-color: #007bff;
+    border-color: #007bff;
+  }
+  .pagination .page-link:hover {
+    background-color: #e8f0fb;
+    border-color: #007bff;
+  }
+  .job-item .btn-deadline-expire {
+    background-color: #e8e8e8;
+    color: #6c757d;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: not-allowed;
+  }
+  .job-item .ap-btn, .btn-deadline-expire{
+    font-size: 14px !important;
+  }
+  .ap-btn {
+    padding: 5px 18px;
+    border-radius: 4px !important;
+    transition: background-color 0.3s, color 0.3s;
+    border: none !important;
+    background-color: #E8F0FB;
+}
+
+.chat-list {
+  margin-top: 20px;
+}
+
+.chat-item {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.chat-item.active {
+  background-color: #e6f7ff;
+}
+
+.chat-avatar img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.chat-info {
+  margin-left: 10px;
+}
+
+.chat-name {
+  font-weight: bold;
+}
+
+.chat-message {
+  color: gray;
+}
+
+.chat-time {
+  font-size: 12px;
+  color: rgb(3, 3, 3);
+}
+
+.chat-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #f1f1f1;
+  border-bottom: 1px solid #ddd;
+}
+
+.chat-title {
+  font-weight: bold;
+}
+
+.chat-messages {
+  padding: 20px;
+}
+.chat-messages {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.chat-message {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 10px;
+}
+
+.chat-message.sent {
+  flex-direction: row-reverse;
+}
+
+.chat-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 10px;
+}
+
+.chat-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.chat-bubble {
+  max-width: 70%;
+  padding: 10px;
+  border-radius: 10px;
+  position: relative;
+}
+
+.chat-bubble .chat-text {
+  margin-bottom: 5px;
+}
+
+.chat-bubble .chat-time {
+  font-size: 12px;
+  color: gray;
+  position: absolute;
+  bottom: 5px;
+  right: 10px;
+}
+
+.chat-bubble .chat-sender {
+  font-size: 12px;
+  color: gray;
+  margin-top: 5px;
+}
+
+.chat-message.received .chat-bubble {
+  background-color: #f1f1f1;
+  border-top-left-radius: 0;
+}
+
+.chat-message.sent .chat-bubble {
+  background-color: #007bff;
+  color: white;
+  border-top-right-radius: 0;
+}
+
+.chat-message.sent .chat-time,
+.chat-message.sent .chat-sender {
+  color: white;
+}
+.chat-text {
+  margin-bottom: 5px;
+}
+
+.chat-time {
+  font-size: 12px;
+  color: lightgray;
+}
+
+.chat-sender {
+  font-size: 12px;
+  color: gray;
+  position: absolute;
+  bottom: -20px;
+  right: 10px;
+}
+.chat-search-bar {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ddd;
+  border-radius: 50px;
+  padding: 5px 10px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.chat-search-bar input {
+  border: none;
+  outline: none;
+  flex: 1;
+  padding: 6px;
+  border-radius: 50px;
+  font-size: 12px;
+}
+
+.chat-search-bar button {
+  background-color: #0B5ED7;
+  border: none;
+  border-radius: 50%;
+  padding: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.chat-search-bar button svg {
+  color: #fff;
+}
+
+.chat-messages {
+    height: calc(100vh - 200px);
+    overflow-y: auto;
+    padding: 20px;
+    background-color: #fff;
+    scrollbar-width: none; /* For Firefox */
+}
+
+.chat-messages::-webkit-scrollbar {
+    display: none; /* For Chrome, Safari, and Opera */
+}
+    
+    
+.chat-input {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background-color: #fff;
+  /* border-top: 1px solid #ddd; */
+  position: sticky;
+  bottom: 0;
+}
+
+.chat-input input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  margin-right: 10px;
+}
+
+.chat-input button {
+  background-color: #007bff;
+  border: none;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.chat-input button i {
+  fill: white;
+}
+.header-change-password{
+  font-size: 20px;
+  font-weight: 600;
+}
+.label-change-password{
+  font-size: 16px;
+  font-weight: 600;
+}
+.password-input-group .form-control{
+  border: 1px solid #B7CDEB;
+  border-radius: 4px;
+  font-size: 14px;
+  color: #B7CDEB;
+}
+.password-input-group .form-control:focus{
+  border: 1px solid #007bff;
+}
+.password-input-group .form-control:focus::placeholder{
+  color: #007bff;
+}
+.password-input-group .form-control::placeholder{
+  color: #B7CDEB;
+}
+.premium-text{
+ font-size: 14px;
+ line-height: 30px;
+ font-weight: 400;
+}
+.premium-title{
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.buy-now-btn{
+  background-color: #007bff;
+  border: none;
+  color: white;
+  padding: 10px 36px;
+  cursor: pointer;
+  margin-top: 40px;
+}
+ul.plans-tabs.nav.nav-tabs {
+  display: flex;
+  justify-content: center;
+  background-color: #F6E9FE4D;
+  padding: 10px 0;
+  border: none;
+}
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active , .nav-tabs .nav-link:hover {
+ border-top: none !important;
+ border-left: none !important;
+ border-right: none !important;
+ background-color: transparent;
+}

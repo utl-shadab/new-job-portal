@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+.dash-menu {
+  color: #000;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  margin: 20px 0;
+  line-height: 22px;
+  padding: 10px;
+  align-items: center;
+  gap: 10px;
+  transition: all ease-in-out 0.5s;
+}
+
+.dash-menu img {
+  width: 24px;
+  height: 24px;
+}
+
+.dash-menu a {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  color: #545454;
+}
+
+.dashboard-items {
+  background-color: #fff;
+  height: 100%;
+  padding: 20px;
+}
+
+.dash-menu:hover {
+  background-color: #E8F0FB;
+}
+
+.dash-menu:hover .dash-menu li a {
+  color: #1967D2 !important;
+}
+
+.icon-container {
+  border-radius: 4px;
+  /* background: #E8F0FB; */
+  padding: 10px;
+}
+.text-container {
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 22px;
+}
+.state-container{
+  border-radius: 4px;
+}
+.btn-bg {
+  color: #0a58ca !important;
+  background-color:transparent !important;
+  border-color: #0a58ca !important;
+}
+.main-pro{
+  position: relative;
+}
+
+.clone{
+  position: absolute;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%, -50%);
+ color: #1967D2;
+ cursor: pointer;
+ transition: all ease-in-out 0.5s;
+ z-index: 2;
+}
+
+.prof-con {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+}
+
+.profile-pic {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.712); 
+  border-radius: 50% ;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.prof-con:hover .overlay {
+  opacity: 1;
+}
+
+
+.clone:hover ~ .prof-con .overlay {
+  opacity: 1;
+}
+.react-tel-input .form-control {
+  width: 100% !important;
+  padding-left: 48px !important;
+}
+.modal-content{
+  border-radius: 0px !important;
+  padding: 16px !important;
+}
+.form-control{
+  border: 1px solid #B7CDEB !important;
+  padding: 8px !important;
+  gap: 8px !important;
+}
+input::placeholder{
+  color: #8A8A8A !important;
+  font-size: 14px !important;
+}
+label{
+  font-size: 16px !important;
+  font-weight: 500 !important;
+  line-height: 22px !important;
+  color: #000 !important;
+}
+label span{
+  color: red;
+  
+}
+.grey{
+  color: #545454;
+  font-size: 14px;
+  font-weight: 400;
+}
+.modal-title {
+  font-size: 18px;
+  font-weight: 600;
+}

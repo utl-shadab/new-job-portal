@@ -1,0 +1,32 @@
+.action{
+    background-color: #175dbd;
+    padding: 20px 0;
+}
+.button-group button{
+    display: flex;
+    padding: 2px 4px;
+    border: 0.7px solid #B8D0F1;
+    border-radius: 4px;
+    font-size: 14px;
+    color: #E6E6E6;
+}
+.learn{
+    display: flex;
+    padding: 7px 16px;
+    border: 0.7px solid #B8D0F1;
+    border-radius: 4px;
+    font-size: 14px;
+    color: #E6E6E6;
+}
+.action-heading{
+    font-size: 24px;
+    line-height: 29.05px;
+    color: white;
+    font-weight: 700;
+}
+.action-para{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.36px;
+    color: #E6E6E6;
+}

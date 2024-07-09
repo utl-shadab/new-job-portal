@@ -1,0 +1,40 @@
+
+  .social-icons a {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  .social-icons i {
+    font-size: 20px;
+    padding: 6px;
+    border-radius: 50px;
+  }
+
+  .ri-instagram-line {
+    background-color: #000000; 
+  }
+  
+  .ri-twitter-line {
+    background-color: #000000; 
+    margin: 0 12px;
+  }
+  
+  .ri-facebook-line {
+    background-color: #000000; 
+  }
+  footer li  {
+    padding: 5px, 10px, 5px, 10px;
+    font-size: 16px;
+    font-weight: 300;
+}
+  footer ul  {
+    margin: 7px 0;
+}
+footer h5{
+    font-size: 16px;
+    font-weight: 600;
+}
+.footer-form{
+    background-color: #171717;
+}

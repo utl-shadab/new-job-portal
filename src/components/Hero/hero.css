@@ -1,0 +1,150 @@
+/* new css  */
+.bg-half-260 {
+    align-self: center;
+    background-position: 50%;
+    background-size: cover !important;
+    padding: 12rem 0;
+    position: relative;
+}
+.bg-overlay {
+    background-color: #0b0907d3;
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+}
+.heading{
+    font-size: 64px;
+    line-height: 95px;
+    font-weight: 600;
+}
+.hero-desc{
+    font-size: 20px;
+    line-height: 30px;
+    color: #fff;
+}
+.frame {
+   
+    margin: 37px 0;
+    position: relative;
+}
+.box-wrapper .box img{
+    height: 80px;
+}
+.box-right {
+    text-align: justify;
+    margin: 0 18px;
+}
+.job-search-form {
+    position: relative;
+    background: #ffffff47;
+    box-shadow: 0 7px 18px rgba(64, 79, 104, .05);
+    border-radius: 10px;
+    width: 100%;
+    margin-top: 72px;
+    padding: 20px 20px 20px 30px;
+}
+
+.job-search-form .form-group {
+    position: relative;
+    text-align: left;
+    margin-bottom: 0;
+}
+.job-search-form .form-group .icon {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    margin-top: -15px;
+    width: 30px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 24px;
+    color: #5c6770;
+    background: #fff;
+    z-index: 9;
+}
+.job-search-form .form-group input, .job-search-form .form-group select, .job-search-form .form-group textarea, .job-search-form .ui-selectmenu-button.ui-button {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 60px;
+    font-size: 15px;
+    color: dimgray;
+    line-height: 30px;
+    font-weight: 400;
+    background-color: #fff;
+    padding: 15px 0 15px 40px;
+    border: 1px solid;
+    border-radius: 10px;
+    transition: all .3s ease;
+}
+.job-search-form .form-group.btn-box {
+    text-align: center;
+    position: absolute;
+    top: 15%;
+    right: 22px;
+}
+.job-search-form .form-group .theme-btn {
+    width: 100px;
+    height: 43px;
+}
+.btn-style-one {
+    position: relative;
+    text-align: center;
+    white-space: nowrap;
+    color: #fff;
+    background-color: #1967d2;
+    font-size: 15px;
+    line-height: 20px;
+    border-radius: 8px;
+    font-weight: 400;
+    padding: 18px 35px 15px;
+}
+@media only screen and (max-width: 768px) {
+   .location {
+        margin: 14px 0px;
+    }
+    .heading {
+        font-size: 36px;
+        line-height: 50px;
+       
+    }
+    .bg-half-260 {
+        padding: 7rem 0;
+    }
+    .box-wrapper {
+        grid-template-columns: repeat(2, 2fr);
+    }
+    .box-right {
+        text-align: justify;
+        margin: 0
+    }
+}
+@media only screen and (max-width: 420px) {
+  
+    .heading {
+        font-size: 23px;
+        line-height: 34px;
+    }
+    .hero-desc {
+        font-size: 16px;
+        line-height: 23px;
+    }
+    .box-wrapper {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .box{
+        border: 1px solid #1967d2;
+        padding: 12px;
+    }
+    .bg-half-260 {
+        padding: 7rem 0;
+    }
+    .small-out-box {
+      
+        gap: 0px;
+    }
+}

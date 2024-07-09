@@ -1,0 +1,92 @@
+.company-name {
+    padding: 2px 12px;
+}
+.rating .fa-star {
+    font-size: 9px;
+}
+.rating span {
+    font-size: 11px;
+}
+.rec-card {
+   margin: 8px;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #B8D0F1;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.rec-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .rec-card::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color: #1967d2;
+    transition: height 0.3s;
+    z-index: 1;
+  }
+  
+  .rec-card:hover::before {
+    height: 100%;
+  }
+  
+  .rec-top, .rec-bottom {
+    position: relative;
+    z-index: 2;
+  }
+
+  .rec-card:hover .rec-top, 
+.rec-card:hover .rec-bottom .apply-btn,
+.rec-card:hover .rec-bottom .opening p {
+  color: white !important;
+  border-color: white;
+}
+.rec-top{
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    background-color: #E8F0FB;
+}
+.compane-name{
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+    color: #000000;
+}
+.location>p, .applied>p{
+    font-size: 12px;
+    font-weight: 400;
+}
+.location>i, .applied>i {
+    height: 18px;
+    width: 18px;
+}
+
+
+.recruiter .owl-dots {
+  display: none;
+}
+.owl-carousel .owl-nav.disabled, .owl-carousel .owl-dots.disabled {
+  display: block;
+}
+
+.rec-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.owl-carousel .owl-item img {
+  display: block;
+  width: auto !important;
+}

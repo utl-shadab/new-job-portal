@@ -1,0 +1,41 @@
+.testimonial {
+    background-color: #1967D2;
+}
+
+.auther-name {
+    font-size: 20px;
+    font-weight: 600;
+    color: #1967D2;
+}
+
+.auther-designation {
+    font-size: 20px;
+    font-weight: 300;
+    color: #000000;
+}
+.testimonial-header{
+    display: flex;
+    justify-content: space-between;
+}
+.testi-cards{
+    background-color: white;
+    padding: 20px;
+}
+.testi-cards p{
+    width: 70%;
+    margin: 12px 0;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 18px;
+    color: #000000;
+}
+.owl-theme .owl-nav .owl-prev, .owl-theme .owl-nav .owl-next {
+    background: white ;
+    color: blue ;
+    border: none;
+    border-radius: 50%;
+    height: 40px;
+    cursor: pointer;
+    font-size: 20px;
+    width: 40px;
+}
